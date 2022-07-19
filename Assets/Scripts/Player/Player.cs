@@ -16,6 +16,10 @@ public class Player : MonoBehaviour {
     Rigidbody2D myRigidbody;
     Animator animator;
 
+    [SerializeField] AudioClip bounceSFX;
+    [SerializeField] AudioClip superBounceSFX;
+
+
     private void Awake() {
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -44,9 +48,12 @@ public class Player : MonoBehaviour {
             superJumpActivatedThisFrame = true;
             myRigidbody.velocity = transform.up * boostBounceSpeed;
             StartCoroutine(ShrinkCamera());
+            AudioManager.PlayClip(superBounceSFX);
         }
         else {
             myRigidbody.velocity = transform.up * baseBounceSpeed;
+            AudioManager.PlayClip(bounceSFX);
+
         }
         tricksDetector.Reset();
     }

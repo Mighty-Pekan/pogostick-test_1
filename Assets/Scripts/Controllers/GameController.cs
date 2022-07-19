@@ -21,7 +21,7 @@ public class GameController : MonoSingleton<GameController>
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 
-    //==============================================================registering objects
+    //============================================================== registering objects
     public static void RegisterInputManager(InputManager _inputManager)
     {
         instance.inputManager = _inputManager;
