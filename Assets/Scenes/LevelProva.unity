@@ -1668,10 +1668,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2671799174498793409, guid: 2034acfb5d443d442a4b8bf7fd249704, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2671799174498793410, guid: 2034acfb5d443d442a4b8bf7fd249704, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1716,14 +1712,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2671799176576378325, guid: 2034acfb5d443d442a4b8bf7fd249704, type: 3}
-      propertyPath: m_TagString
-      value: BouncingTip
-      objectReference: {fileID: 0}
-    - target: {fileID: 5813992757801960742, guid: 2034acfb5d443d442a4b8bf7fd249704, type: 3}
-      propertyPath: bounceSFX
-      value: 
-      objectReference: {fileID: 8300000, guid: 2b713b5fba333354691416aeae9e2a1d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2034acfb5d443d442a4b8bf7fd249704, type: 3}
 --- !u!95 &2671799176182590786 stripped
