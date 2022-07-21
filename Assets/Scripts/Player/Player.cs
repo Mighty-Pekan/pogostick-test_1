@@ -67,14 +67,14 @@ public class Player : MonoBehaviour {
         if (!superJumpActivatedThisFrame && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("BouncingTip")) {
             if (other.contacts[0].point.y < transform.position.y) {
                 animator.SetBool("SuperJump", false);
-                Debug.Log("DEACTIVATING SUPERJUMP");
+                //Debug.Log("DEACTIVATING SUPERJUMP");
             }
             else {
-                Debug.Log("NO DEACTIVATION: othertag = " + other.gameObject.tag + ", collision Y: " + other.contacts[0].point.y + ", my y:" + transform.position.y);
+                //Debug.Log("NO DEACTIVATION: othertag = " + other.gameObject.tag + ", collision Y: " + other.contacts[0].point.y + ", my y:" + transform.position.y);
 
             }
         }
-        else Debug.Log("NO DEACTIVATION: superjumpThisFrame = " + superJumpActivatedThisFrame + ", othertag = " + other.gameObject.tag);
+        //else Debug.Log("NO DEACTIVATION: superjumpThisFrame = " + superJumpActivatedThisFrame + ", othertag = " + other.gameObject.tag);
     }
 
 

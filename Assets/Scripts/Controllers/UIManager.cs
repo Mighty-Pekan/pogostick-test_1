@@ -53,7 +53,7 @@ public class UIManager : MonoSingleton<UIManager>
     {
         for (int i = 1; i < GameController.GetLevelsCount(); i++)
         {
-            Debug.Log("Index " + i);
+            //Debug.Log("Index " + i);
             GameObject buttonInstance = Instantiate(selectLevelButtonPrefab, selectLevelPanel.transform.position, Quaternion.identity);
             buttonInstance.name = "Level" + i;
             buttonInstance.transform.parent = selectLevelPanel.transform;
